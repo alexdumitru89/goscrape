@@ -43,7 +43,7 @@ func main() {
 
 	c.OnRequest(func(r *colly.Request) {
 		if ref != "" {
-			r.Headers.Set("Referer", "https://www.displayspecifications.com/en")
+			r.Headers.Set("Referer", ref)
 		}
 	})
 
